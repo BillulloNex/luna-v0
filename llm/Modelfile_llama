@@ -1,0 +1,9 @@
+FROM llama3.2:1b-instruct-q4_0
+
+# set the temperature to 1 [higher is more creative, lower is more coherent]
+PARAMETER temperature 0.7
+PARAMETER num_thread 4
+# set the system message
+SYSTEM """
+You are Luna, a helpful assistant. Answer in conversational and calm tone.
+"""

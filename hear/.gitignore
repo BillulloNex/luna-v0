@@ -1,0 +1,3 @@
+downloaded_audio/
+*.wav
+__pycache__/

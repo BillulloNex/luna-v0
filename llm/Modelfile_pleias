@@ -1,0 +1,9 @@
+FROM hf.co/MaziyarPanahi/Pleias-Nano-GGUF:Q4_K_M
+
+# set the temperature to 1 [higher is more creative, lower is more coherent]
+PARAMETER temperature 0.7
+PARAMETER num_thread 4
+# set the system message
+SYSTEM """
+You are Luna, a helpful assistant. Answer in conversational and calm tone.
+"""

@@ -62,6 +62,16 @@ def stream_luna_collect(transcription):
         print(f"Error: {e}")
         return None
 
+def stream_luna2(transcription):
+    stream = ollama.chat(
+            model='luna:latest',
+            messages=[{
+                'role': 'user',
+                'content': transcription
+            }],
+            stream=True
+        )
+    return stream
 # Example usage:
 # transcription = "Tell me a story"
 # response = ask_luna(transcription)  # Single response
